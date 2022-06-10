@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <div class="inputs">
+          <h4>choose grid size</h4>
+          
+          <form class="size-picker">
+            Grid Height:
+            <input type="number" class="input-height" name="height" min="1" max="50" value="10">
+            <br><br>
+            Grid Width:
+            <input type="number" class="input-width" name="width" min="1" max="50" value="10">
+            <input type="submit" class="submit-button" value="submit">
+            <p><em>also clears grid</em></p>
+          </form>
+            <b>Pick A Color</b>
+          <input type="color" class="color-picker" value="#6aa5b8">
+          <input type="button" class="quick-fill" value="fill">
+          
+          <b>Mode</b>
+          <input type="button" class="erase-mode" value="erase">
+          <p><em>or double-click to erase</em></p>
+          <input type="button" class="draw-mode" value="draw">
+        </div>
+      </div>
+      <div class="column">
+        <h1>Pixel Art Maker</h1>
+        <table class="pixel-canvas"></table>
+        <br>
+      </div>
+    </div>
+    <script src="designs.js"></script>
+  </body>
+</html>
